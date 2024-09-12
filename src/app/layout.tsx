@@ -5,6 +5,8 @@ import StyledComponentsRegistry from "../../lib/registry";
 import { Main } from "@/components/Main";
 import { Aside } from "@/components/Aside";
 import { Card } from "@/components/Card";
+import Lottie from "lottie-react";
+import LottieBackground from "@/components/LottieBackground";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,12 +24,15 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <StyledComponentsRegistry>
-          <Main>
-            <Aside />
-            <Card>
-              {children}
-            </Card>
-          </Main>
+          <div style={{ position: "relative", height: "100vh", width: "100vw", overflow: "hidden" }}>
+            <LottieBackground />
+            <Main>
+              <Aside />
+              <Card>
+                {children}
+              </Card>
+            </Main>
+          </div>
         </StyledComponentsRegistry>
       </body>
     </html>

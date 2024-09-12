@@ -13,7 +13,7 @@ interface SourceListProps {
 const ListContainer = styled.div`
   margin: 20px auto;
   padding: 20px;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
   border-radius: 10px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   width: 100%;

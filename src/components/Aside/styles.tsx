@@ -11,8 +11,8 @@ export const AsideUl = styled.ul`
     flex-grow: 1;
     margin: 0;
     list-style: none;
-    background-image: url('/bg.png');
+    /* background-image: url('/bg.png');
     background-repeat: no-repeat;
     background-position: center bottom;
-    background-size: contain; 
+    background-size: contain;  */
 `
